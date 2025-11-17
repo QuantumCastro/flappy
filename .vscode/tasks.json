@@ -1,0 +1,76 @@
+{
+  "version": "2.0.0",
+  "options": {
+    "shell": {
+      "args": [
+        "-NoProfile",
+        "-Command"
+      ],
+      "executable": "pwsh"
+    }
+  },
+  "tasks": [
+    {
+      "label": "Setup: pnpm install",
+      "command": "pnpm install",
+      "problemMatcher": [],
+      "type": "shell",
+      "detail": "Install workspace dependencies"
+    },
+    {
+      "label": "Dev: Next.js",
+      "command": "pnpm --dir frontend dev",
+      "problemMatcher": [],
+      "type": "shell",
+      "detail": "Start Next.js dev server"
+    },
+    {
+      "label": "Lint",
+      "command": "pnpm --dir frontend lint",
+      "problemMatcher": [],
+      "type": "shell"
+    },
+    {
+      "label": "Type-check",
+      "command": "pnpm --dir frontend type-check",
+      "problemMatcher": [],
+      "type": "shell"
+    },
+    {
+      "label": "Test",
+      "command": "pnpm --dir frontend test",
+      "problemMatcher": [],
+      "type": "shell"
+    },
+    {
+      "label": "Build",
+      "command": "pnpm --dir frontend build",
+      "problemMatcher": [],
+      "type": "shell"
+    },
+    {
+      "label": "Export",
+      "command": "pnpm --dir frontend export",
+      "problemMatcher": [],
+      "type": "shell",
+      "detail": "Regenerate frontend/out"
+    },
+    {
+      "label": "Preview /out",
+      "command": "pnpm --dir frontend preview",
+      "problemMatcher": [],
+      "type": "shell",
+      "detail": "Serve static export locally"
+    },
+    {
+      "label": "Verify (lint+type+test+build)",
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "Lint",
+        "Type-check",
+        "Test",
+        "Build"
+      ]
+    }
+  ]
+}

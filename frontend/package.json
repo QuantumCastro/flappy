@@ -1,0 +1,49 @@
+{
+  "name": "@app/frontend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Frontend Next.js + TypeScript + Tailwind para el stack full-stack.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "export": "pnpm build",
+    "lint": "next lint",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "type-check": "tsc --noEmit",
+    "format": "prettier --check .",
+    "format:fix": "prettier --write .",
+    "preview": "pnpm dlx serve out --listen 4173 --single"
+  },
+  "engines": {
+    "node": ">=18.18.0",
+    "pnpm": ">=8.10.0"
+  },
+  "dependencies": {
+    "next": "14.2.5",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^14.2.1",
+    "@testing-library/user-event": "^14.5.1",
+    "@types/node": "^20.16.5",
+    "@types/react": "^18.3.4",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.5",
+    "eslint-config-prettier": "^9.1.0",
+    "jsdom": "^24.1.0",
+    "postcss": "^8.4.47",
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.5.14",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5.5.4",
+    "vitest": "^1.6.0"
+  }
+}

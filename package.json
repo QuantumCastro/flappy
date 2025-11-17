@@ -1,0 +1,16 @@
+{
+  "name": "@app/root",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Workspace root for the web-static skeleton.",
+  "scripts": {
+    "lint": "pnpm --dir frontend lint",
+    "type-check": "pnpm --dir frontend type-check",
+    "test": "pnpm --dir frontend test",
+    "build": "pnpm --dir frontend build"
+  },
+  "engines": {
+    "node": ">=20.10.0",
+    "pnpm": ">=10.18.0"
+  }
+}

@@ -1,0 +1,42 @@
+# Virtual environments
+.venv/
+.env
+.env.local
+.envrc
+
+# Tooling caches
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+.benchmarks/
+
+# Build artifacts
+build/
+dist/
+reports/
+*.log
+*.sqlite3
+data/*.db
+data/*.sqlite
+data/backups/
+logs/
+
+# Node / frontend
+node_modules/
+.next/
+frontend/.next/
+frontend/node_modules/
+.turbo/
+*.tsbuildinfo
+
+# VS Code / workspace
+.vscode/*.code-workspace
+
+# Secrets baseline override
+.secrets.baseline.local
+out/
+frontend/out/
+

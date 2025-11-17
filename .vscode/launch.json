@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node-terminal",
+      "request": "launch",
+      "name": "Next.js dev",
+      "command": "pnpm --dir frontend dev"
+    },
+    {
+      "type": "node-terminal",
+      "request": "launch",
+      "name": "Next.js preview (/out)",
+      "command": "pnpm --dir frontend preview"
+    },
+    {
+      "type": "node-terminal",
+      "request": "launch",
+      "name": "Vitest watch",
+      "command": "pnpm --dir frontend test:watch"
+    }
+  ]
+}
