@@ -16,7 +16,7 @@ export const PIPE_GAP_MARGIN = 20;
 export const PIPE_DESPAWN_BUFFER = PIPE_WIDTH * 2;
 
 export const SCROLL_SPEED = 180; // px/s
-export const GRAVITY = 850; // px/s^2
+export const GRAVITY = 790; // px/s^2
 export const FLAP_VELOCITY = -260; // px/s
 export const MAX_FALL_SPEED = 420; // px/s
 export const ROTATION_SMOOTHING = 6; // larger -> smoother tilt
